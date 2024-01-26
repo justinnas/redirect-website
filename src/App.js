@@ -1,13 +1,15 @@
-import logo from './logo.svg';
 import './App.css';
+import TopBar from './components/TopBar';
+import PageContents from './components/PageContents';
+import Colors from './colors/colors';
 
 function App() {
 	return (
-		<div className='App'>
-			<header className='App-header'>
-				<img src={logo} className='App-logo' alt='logo' />
-				<p>Hello! I'm Justinas.</p>
-			</header>
+		<div className='App' style={{ backgroundColor: Colors.mainBackground }}>
+			<TopBar />
+			<div>
+				<PageContents />
+			</div>
 		</div>
 	);
 }

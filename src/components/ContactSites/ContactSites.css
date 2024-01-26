@@ -1,0 +1,10 @@
+.logo {
+	cursor: pointer;
+	font-size: 40px !important;
+	transition: color 1s ease;
+	margin-right: 0.5em;
+}
+
+.logo:hover {
+	color: grey;
+}
