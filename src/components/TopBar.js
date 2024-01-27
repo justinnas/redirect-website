@@ -7,6 +7,8 @@ import useScrollTrigger from '@mui/material/useScrollTrigger';
 import Slide from '@mui/material/Slide';
 import Colors from '../colors/colors.js';
 import '../App.js';
+import MyLogo from '../logo.png';
+import { Grid, Box } from '@mui/material';
 
 function HideOnScroll(props) {
 	const { children, window } = props;
@@ -27,11 +29,9 @@ export default function HideAppBar(props) {
 		<React.Fragment>
 			<CssBaseline />
 			<HideOnScroll {...props}>
-				<AppBar style={{ boxShadow: 'none' }}>
-					<Toolbar style={{ backgroundColor: Colors.mainBackground, boxShadow: 'none' }}>
-						<Typography variant='h6' component='div'>
-							@justinnas
-						</Typography>
+				<AppBar style={{ boxShadow: 'none', background: 'transparent' }}>
+					<Toolbar style={{ background: 'transparent', boxShadow: 'none' }}>
+						<img src={MyLogo} alt='justinnas' height='90' />
 					</Toolbar>
 				</AppBar>
 			</HideOnScroll>

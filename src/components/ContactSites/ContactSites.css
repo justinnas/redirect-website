@@ -1,10 +1,13 @@
 .logo {
 	cursor: pointer;
-	font-size: 40px !important;
+	font-size: 50px !important;
 	transition: color 1s ease;
-	margin-right: 0.5em;
+	margin-right: 0.6em;
+	padding: 5px;
 }
 
 .logo:hover {
-	color: grey;
+	color: rgb(20, 20, 20);
+	/* background-color: rgba(20, 20, 20, 0.2); */
+	border-radius: 50%;
 }

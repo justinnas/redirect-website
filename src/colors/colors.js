@@ -1,6 +1,6 @@
 const Colors = {
-	mainTextColor: 'rgb(255, 247, 240)',
-	mainBackground: 'rgb(38, 37, 35)',
+	mainTextColor: 'rgb(245, 245, 245)',
+	mainBackground: 'rgb(20, 20, 20)',
 };
 
 export default Colors;
