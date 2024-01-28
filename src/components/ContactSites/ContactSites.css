@@ -1,13 +1,33 @@
 .logo {
-	cursor: pointer;
 	font-size: 50px !important;
 	transition: color 1s ease;
-	margin-right: 0.6em;
 	padding: 5px;
 }
 
-.logo:hover {
-	color: rgb(20, 20, 20);
+.logo-box {
+	height: 50px;
+	width: 50px;
+	border-radius: 20px;
+	box-shadow: 0px 0px 0px 2px white;
+	margin-right: 0.6em;
+	display: flex;
+	align-items: center;
+	background-color: black;
+	transition: width 1s ease;
+	overflow: hidden;
+}
+
+.logo-box:hover {
 	/* background-color: rgba(20, 20, 20, 0.2); */
-	border-radius: 50%;
+	box-shadow: 0px 0px 0px 4px white;
+}
+
+.logo-box.extended {
+	width: 17em;
+}
+
+.email-text {
+	margin-left: 0.5em;
+	margin-right: 0.5em;
+	z-index: 2;
 }

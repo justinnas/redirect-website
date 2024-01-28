@@ -6,12 +6,19 @@ import { Box } from '@mui/material';
 import './ContactSites.css';
 import noise from './noise.svg';
 import Colors from '../../colors/colors.js';
+import React, { useState } from 'react';
 
 const openGithub = () => {
 	window.open('https://github.com/justinnas', '_blank');
 };
 
 export default function ContactSites() {
+	const [isEmailShown, setIsEmailShown] = useState(false);
+
+	const toggleEmailVisibility = () => {
+		setIsEmailShown(!isEmailShown);
+	};
+
 	return (
 		<Box
 			style={{
@@ -25,10 +32,15 @@ export default function ContactSites() {
 				width: '400px',
 			}}
 		>
-			<GitHubIcon onClick={openGithub} className='logo' />
+			<Box className='logo-box' onClick={openGithub}>
+				<GitHubIcon className='logo' />
+			</Box>
 			{/* <LinkedInIcon onClick={openGithub} className='logo' />
 			<InstagramIcon onClick={openGithub} className='logo' /> */}
-			<MailOutlineIcon onClick={openGithub} className='logo' />
+			<Box className={`logo-box ${isEmailShown ? 'extended' : ''}`}>
+				<MailOutlineIcon className='logo' onClick={toggleEmailVisibility} />
+				<span className='email-text'>developer@gmail.com</span>
+			</Box>
 		</Box>
 	);
 }
