@@ -39,7 +39,7 @@ export default function ContactSites() {
 			<InstagramIcon onClick={openGithub} className='logo' /> */}
 			<Box className={`logo-box ${isEmailShown ? 'extended' : ''}`}>
 				<MailOutlineIcon className='logo' onClick={toggleEmailVisibility} />
-				<span className='email-text'>developer@gmail.com</span>
+				<span className='email-text'>devjustinas@gmail.com</span>
 			</Box>
 		</Box>
 	);

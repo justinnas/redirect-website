@@ -7,10 +7,12 @@ import Colors from './colors/colors';
 import Projects from './components/ProjectsPage/Projects';
 import { Box } from '@mui/material';
 import AnimatedCursor from 'react-animated-cursor';
+import LoadingPage from './components/LoadingPage/LoadingPage.js';
 
-const App = () => {
+function App() {
 	return (
 		<div className='App' style={{ backgroundColor: Colors.mainBackground }}>
+			<LoadingPage />
 			<AnimatedCursor
 				innerSize={8}
 				outerSize={35}
@@ -25,16 +27,17 @@ const App = () => {
 					border: '3px solid white',
 				}}
 			/>
+
 			<TopBar />
 			<Box minHeight='100vh'>
 				<PageContents />
 			</Box>
-			<Box minHeight='70vh'>
+			{/* <Box minHeight='70vh'>
 				<Projects />
-			</Box>
+			</Box> */}
 			<Footer />
 		</div>
 	);
-};
+}
 
 export default App;
