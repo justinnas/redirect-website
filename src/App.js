@@ -13,7 +13,7 @@ function App() {
 	return (
 		<div className='App' style={{ backgroundColor: Colors.mainBackground }}>
 			<LoadingPage />
-			<AnimatedCursor
+			{/* <AnimatedCursor
 				innerSize={8}
 				outerSize={35}
 				innerScale={1}
@@ -26,7 +26,7 @@ function App() {
 				outerStyle={{
 					border: '3px solid white',
 				}}
-			/>
+			/> */}
 
 			<TopBar />
 			<Box minHeight='100vh'>

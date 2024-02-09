@@ -7,7 +7,7 @@ import Spline from '@splinetool/react-spline';
 
 export default function PageContents() {
 	return (
-		<Container maxWidth='xl'>
+		<Container maxWidth='lg'>
 			<Grid
 				container
 				alignItems='center'
@@ -17,18 +17,24 @@ export default function PageContents() {
 				spacing={5}
 			>
 				<Grid item xl={6} md={12} style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-					<Box style={{ overflow: 'visible', alignItems: 'center', justifyContent: 'center', width: '500px' }}>
+					<Box
+						style={{
+							overflow: 'visible',
+							alignItems: 'center',
+							justifyContent: 'center',
+							width: '50vw',
+						}}
+					>
 						<Typography
 							sx={{
-								fontSize: { xl: '2.5rem', md: '1rem' },
+								fontSize: { xl: '2.5rem', md: '1rem', xs: '0.6rem' },
 								fontWeight: '100',
-								marginBottom: '-10px',
 								fontFamily: 'Poppins',
 							}}
 						>
 							Hello, I'm
 						</Typography>
-						<Typography sx={{ fontSize: { xl: '4rem', md: '2rem' }, fontWeight: '900', fontFamily: 'Poppins' }}>
+						<Typography sx={{ fontSize: { xl: '4rem', md: '2.5rem' }, fontWeight: '900', fontFamily: 'Poppins' }}>
 							JUSTINAS;
 						</Typography>
 						<Typography
@@ -41,19 +47,26 @@ export default function PageContents() {
 							}}
 						>
 							<Grid container>
-								<Grid item xl={3.7} md={12}>
+								<Grid item xl={3.4} md={12} xs={12}>
 									Need a
 								</Grid>
-								<Grid item xl={8.3} md={12} sx={{ fontSize: { xl: '2.5rem', md: '1.5rem' }, fontWeight: '900' }}>
+								<Grid
+									item
+									xl={8.6}
+									md={12}
+									sx={{
+										fontSize: { xl: '2.5rem', md: '1.5rem' },
+										fontWeight: '900',
+									}}
+								>
 									<TitleAnimation />?
 								</Grid>
 							</Grid>
 						</Typography>
 						<Box
 							sx={{
-								scale: { xl: '1', md: '0.6', xs: '0.2' },
-								marginLeft: { xl: '0', md: '-25%' },
-								marginTop: { xl: '0', md: '-3%' },
+								scale: { xl: '1', md: '0.6', xs: '0.5' },
+								marginLeft: { xl: '0', md: '-25%', xs: '-33%' },
 							}}
 						>
 							<ContactSites />

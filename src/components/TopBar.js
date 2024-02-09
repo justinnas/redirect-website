@@ -30,8 +30,8 @@ export default function HideAppBar(props) {
 			<CssBaseline />
 			<HideOnScroll {...props}>
 				<AppBar style={{ boxShadow: 'none', background: 'transparent' }}>
-					<Toolbar style={{ background: 'transparent', boxShadow: 'none' }}>
-						<img src={MyLogo} alt='justinnas' height='90' />
+					<Toolbar style={{ background: 'transparent', boxShadow: 'none', marginBottom: '20vh' }}>
+						<img src={MyLogo} alt='justinnas' width='75vw' />
 					</Toolbar>
 				</AppBar>
 			</HideOnScroll>
