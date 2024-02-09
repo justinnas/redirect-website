@@ -1,7 +1,6 @@
 import { Typography, Container, Box, Grid } from '@mui/material';
 import TitleAnimation from './TitleAnimation/TitleAnimation.js';
 import '../App.css';
-import Colors from '../colors/colors.js';
 import ContactSites from './ContactSites/ContactSites.js';
 import Spline from '@splinetool/react-spline';
 
@@ -77,6 +76,7 @@ export default function PageContents() {
 					<Box
 						style={{
 							zIndex: '5',
+							scale: { xl: '1', md: '0.6', xs: '0.5' },
 						}}
 					>
 						<Spline scene='https://prod.spline.design/0II-GlA-x7RnDXuK/scene.splinecode' />

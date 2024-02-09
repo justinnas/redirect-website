@@ -1,6 +1,4 @@
-import { TypeAnimation } from 'react-type-animation';
-import React, { useState, useEffect, useCallback } from 'react';
-import { Box } from '@mui/material';
+import React, { useState, useEffect } from 'react';
 import './LoadingPage.css';
 import MyLogo from '../../logo.png';
 

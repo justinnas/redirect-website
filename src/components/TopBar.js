@@ -1,14 +1,11 @@
 import * as React from 'react';
 import AppBar from '@mui/material/AppBar';
 import Toolbar from '@mui/material/Toolbar';
-import Typography from '@mui/material/Typography';
 import CssBaseline from '@mui/material/CssBaseline';
 import useScrollTrigger from '@mui/material/useScrollTrigger';
 import Slide from '@mui/material/Slide';
-import Colors from '../colors/colors.js';
 import '../App.js';
-import MyLogo from '../logo.png';
-import { Grid, Box } from '@mui/material';
+import MyLogo from '../t7lt_icon.png';
 
 function HideOnScroll(props) {
 	const { children, window } = props;
@@ -30,8 +27,16 @@ export default function HideAppBar(props) {
 			<CssBaseline />
 			<HideOnScroll {...props}>
 				<AppBar style={{ boxShadow: 'none', background: 'transparent' }}>
-					<Toolbar style={{ background: 'transparent', boxShadow: 'none', marginBottom: '20vh' }}>
-						<img src={MyLogo} alt='justinnas' width='75vw' />
+					<Toolbar
+						style={{
+							background: 'transparent',
+							boxShadow: 'none',
+							marginBottom: '20vh',
+							padding: '2%',
+							paddingLeft: '3%',
+						}}
+					>
+						<img src={MyLogo} alt='justinnas' width='8%' />
 					</Toolbar>
 				</AppBar>
 			</HideOnScroll>

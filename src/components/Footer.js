@@ -1,4 +1,4 @@
-import { Typography, Container, Box, Grid } from '@mui/material';
+import { Box } from '@mui/material';
 const Footer = () => {
 	return (
 		<Box style={{ alignItems: 'center', justifyContent: 'center', display: 'flex', padding: '3em' }}>

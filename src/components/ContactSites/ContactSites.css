@@ -2,6 +2,7 @@
 	font-size: 50px !important;
 	transition: color 1s ease;
 	padding: 5px;
+	cursor: pointer;
 }
 
 .logo-box {

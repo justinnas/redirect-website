@@ -1,6 +1,4 @@
 import GitHubIcon from '@mui/icons-material/GitHub';
-import LinkedInIcon from '@mui/icons-material/LinkedIn';
-import InstagramIcon from '@mui/icons-material/Instagram';
 import MailOutlineIcon from '@mui/icons-material/MailOutline';
 import { Box } from '@mui/material';
 import './ContactSites.css';
@@ -35,8 +33,6 @@ const ContactSites = () => {
 			<Box className='logo-box' onClick={openGithub}>
 				<GitHubIcon className='logo' />
 			</Box>
-			{/* <LinkedInIcon onClick={openGithub} className='logo' />
-			<InstagramIcon onClick={openGithub} className='logo' /> */}
 			<Box className={`logo-box ${isEmailShown ? 'extended' : ''}`}>
 				<MailOutlineIcon className='logo' onClick={toggleEmailVisibility} />
 				<span className='email-text'>devjustinas@gmail.com</span>

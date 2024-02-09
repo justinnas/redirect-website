@@ -1,4 +1,4 @@
-import { Typography, Container, Box, Grid } from '@mui/material';
+import { Container, Box, Grid } from '@mui/material';
 import '../../App.css';
 import Colors from '../../colors/colors.js';
 import noise from '../ContactSites/noise.svg';
