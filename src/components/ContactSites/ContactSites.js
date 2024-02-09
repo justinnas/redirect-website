@@ -12,7 +12,7 @@ const openGithub = () => {
 	window.open('https://github.com/justinnas', '_blank');
 };
 
-export default function ContactSites() {
+const ContactSites = () => {
 	const [isEmailShown, setIsEmailShown] = useState(false);
 
 	const toggleEmailVisibility = () => {
@@ -43,4 +43,6 @@ export default function ContactSites() {
 			</Box>
 		</Box>
 	);
-}
+};
+
+export default ContactSites;
