@@ -2,19 +2,12 @@ import { Typography, Container, Box, Grid } from '@mui/material';
 import TitleAnimation from './TitleAnimation/TitleAnimation.js';
 import '../App.css';
 import ContactSites from './ContactSites/ContactSites.js';
-import Spline from '@splinetool/react-spline';
+import Justinnas_logo from './Justinnas_logo.png';
 
 export default function PageContents() {
 	return (
 		<Container maxWidth='lg'>
-			<Grid
-				container
-				alignItems='center'
-				justifyContent='center'
-				overflow='hidden'
-				style={{ minHeight: '80vh' }}
-				spacing={5}
-			>
+			<Grid container alignItems='center' justifyContent='center' overflow='hidden' spacing={5}>
 				<Grid item xl={6} md={12} style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
 					<Box
 						style={{
@@ -72,14 +65,9 @@ export default function PageContents() {
 						</Box>
 					</Box>
 				</Grid>
-				<Grid item xl={6} md={12} style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-					<Box
-						style={{
-							zIndex: '5',
-							scale: { xl: '1', md: '0.6', xs: '0.5' },
-						}}
-					>
-						<Spline scene='https://prod.spline.design/0II-GlA-x7RnDXuK/scene.splinecode' />
+				<Grid item xl={6} md={12} style={{ display: 'flex', justifyContent: 'flex-end' }}>
+					<Box>
+						<img src={Justinnas_logo} alt='justinnas' width='350vw' />
 					</Box>
 				</Grid>
 			</Grid>
