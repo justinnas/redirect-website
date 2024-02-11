@@ -1,4 +1,4 @@
-import { Container, Box, Grid } from '@mui/material';
+import { Container, Box, Grid, Typography } from '@mui/material';
 import '../../App.css';
 import Colors from '../../colors/colors.js';
 import noise from '../ContactSites/noise.svg';
@@ -13,8 +13,18 @@ const boxStyles = {
 
 const Projects = () => {
 	return (
-		<Container>
-			<p className='page-title'>Projects</p>
+		<Container maxWidth='lg' sx={{ paddingLeft: '15vw', paddingRight: '15vw' }}>
+			<Typography
+				sx={{
+					marginTop: '1em',
+					marginBottom: '1em',
+					fontFamily: 'Poppins',
+					fontSize: { xl: '2.5rem', md: '1.5rem' },
+					fontWeight: '900',
+				}}
+			>
+				Projects
+			</Typography>
 			<Box
 				style={{
 					...boxStyles,
@@ -27,15 +37,42 @@ const Projects = () => {
 				}}
 			>
 				<Grid container>
-					<Grid item xs={6}>
-						<Grid container alignItems='center' padding='1.5em'>
+					<Grid item xs={12}>
+						<Grid container alignItems='center' sx={{ padding: { xl: '1.5em', xs: '0.8em' } }}>
 							<Grid item xs={12} paddingBottom='1em'>
-								<span className='project-title'>Portfolio website</span>
-								<span className='project-year'> 2024</span>
+								<Typography
+									display='inline'
+									sx={{
+										fontSize: { xl: '1.5rem', md: '1.2rem', xs: '0.8rem' },
+										fontWeight: '800',
+										fontFamily: 'Poppins',
+									}}
+								>
+									Portfolio website
+								</Typography>
+								<Typography
+									display='inline'
+									sx={{
+										fontSize: { xl: '1rem', md: '1rem', xs: '0.5rem' },
+										fontWeight: '200',
+										fontFamily: 'Poppins',
+									}}
+								>
+									{' '}
+									2024
+								</Typography>
 							</Grid>
 							<Grid item>
 								{' '}
-								<span className='project-desc'>The website you're currently on. Developed from scratch.</span>
+								<Typography
+									sx={{
+										fontSize: { xl: '1rem', md: '1rem', xs: '0.65rem' },
+										fontWeight: '500',
+										fontFamily: 'Poppins',
+									}}
+								>
+									The website you're currently on. Developed from scratch.
+								</Typography>
 							</Grid>
 						</Grid>
 					</Grid>
@@ -58,7 +95,7 @@ const Projects = () => {
 					</Grid>
 				</Grid>
 			</Box>
-			<Box
+			{/* <Box
 				style={{
 					...boxStyles,
 					background: `-webkit-linear-gradient(right, 
@@ -84,8 +121,8 @@ const Projects = () => {
 					</Grid>
 					<Grid item xs={6}></Grid>
 				</Grid>
-			</Box>
-			<Box
+			</Box> */}
+			{/* <Box
 				style={{
 					...boxStyles,
 					background: `-webkit-linear-gradient(right, 
@@ -140,7 +177,7 @@ const Projects = () => {
 					</Grid>
 					<Grid item xs={6}></Grid>
 				</Grid>
-			</Box>
+			</Box> */}
 		</Container>
 	);
 };

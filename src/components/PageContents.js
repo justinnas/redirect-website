@@ -65,9 +65,9 @@ export default function PageContents() {
 						</Box>
 					</Box>
 				</Grid>
-				<Grid item xl={6} md={12} style={{ display: 'flex', justifyContent: 'flex-end' }}>
+				<Grid item xl={6} md={12} xs={12} style={{ display: 'flex', justifyContent: 'center' }}>
 					<Box>
-						<img src={Justinnas_logo} alt='justinnas' width='350vw' />
+						<img src={Justinnas_logo} alt='justinnas' style={{ width: '20vw' }} />
 					</Box>
 				</Grid>
 			</Grid>
