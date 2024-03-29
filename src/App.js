@@ -10,14 +10,9 @@ import Projects from './components/ProjectsPage/Projects';
 function App() {
 	return (
 		<div className='App' style={{ backgroundColor: Colors.mainBackground }}>
-			<Box sx={{ minHeight: { xl: '100vh', xs: '50vh' } }}>
-				<TopBar />
+			<Box sx={{ minHeight: '65vh', paddingTop: '35vh' }}>
 				<PageContents />
 			</Box>
-			<Box sx={{ minHeight: { xl: '100vh', xs: '50vh' }, paddingTop: '10vh' }}>
-				<Projects />
-			</Box>
-			<Footer />
 		</div>
 	);
 }

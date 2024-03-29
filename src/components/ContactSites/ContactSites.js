@@ -22,12 +22,9 @@ const ContactSites = () => {
 			style={{
 				padding: '10px',
 				display: 'flex',
-				background: `-webkit-linear-gradient(left, 
-					rgba(178,40,255,0.5) 0%, 
-					rgba(37,208,253,0.5) 40%, 
-					${Colors.mainBackground} 100%
-				),url(${noise})`,
-				width: '400px',
+				textAlign: 'center',
+				justifyContent: 'center',
+				alignItems: 'center',
 			}}
 		>
 			<Box className='logo-box' onClick={openGithub}>

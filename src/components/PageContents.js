@@ -3,31 +3,31 @@ import TitleAnimation from './TitleAnimation/TitleAnimation.js';
 import '../App.css';
 import ContactSites from './ContactSites/ContactSites.js';
 import Justinnas_logo from './Justinnas_logo.png';
+import MyLogo from '../t7lt_icon.png';
 
 export default function PageContents() {
 	return (
 		<Container maxWidth='lg'>
 			<Grid container alignItems='center' justifyContent='center' overflow='hidden' spacing={5}>
-				<Grid item xl={6} md={12} style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+				<Grid item xl={6} xs={12} style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
 					<Box
 						style={{
 							overflow: 'visible',
 							alignItems: 'center',
 							justifyContent: 'center',
-							width: '50vw',
+							width: '90vw',
+							textAlign: 'center',
 						}}
 					>
+						<img src={MyLogo} alt='t7.lt' width='50%' />
 						<Typography
 							sx={{
-								fontSize: { xl: '2.5rem', md: '1rem', xs: '0.6rem' },
+								fontSize: { xl: '1.7rem', md: '1rem', xs: '1rem' },
 								fontWeight: '100',
 								fontFamily: 'Poppins',
 							}}
 						>
-							Hello, I'm
-						</Typography>
-						<Typography sx={{ fontSize: { xl: '4rem', md: '2.5rem' }, fontWeight: '900', fontFamily: 'Poppins' }}>
-							JUSTINAS;
+							Under development.
 						</Typography>
 						<Typography
 							sx={{
@@ -37,37 +37,14 @@ export default function PageContents() {
 								fontSize: { xl: '2.5rem', md: '1.5rem' },
 								fontWeight: '900',
 							}}
-						>
-							<Grid container>
-								<Grid item xl={3.4} md={12} xs={12}>
-									Need a
-								</Grid>
-								<Grid
-									item
-									xl={8.6}
-									md={12}
-									sx={{
-										fontSize: { xl: '2.5rem', md: '1.5rem' },
-										fontWeight: '900',
-									}}
-								>
-									<TitleAnimation />?
-								</Grid>
-							</Grid>
-						</Typography>
+						></Typography>
 						<Box
 							sx={{
-								scale: { xl: '1', md: '0.6', xs: '0.5' },
-								marginLeft: { xl: '0', md: '-25%', xs: '-33%' },
+								scale: { xl: '1', md: '0.7', xs: '0.7' },
 							}}
 						>
 							<ContactSites />
 						</Box>
-					</Box>
-				</Grid>
-				<Grid item xl={6} md={12} xs={12} style={{ display: 'flex', justifyContent: 'center' }}>
-					<Box>
-						<img src={Justinnas_logo} alt='justinnas' style={{ width: '20vw' }} />
 					</Box>
 				</Grid>
 			</Grid>
