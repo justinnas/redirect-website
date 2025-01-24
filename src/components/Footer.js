@@ -1,4 +1,4 @@
-import { Box, Typography } from '@mui/material';
+import { Box, Typography, Link } from '@mui/material';
 const Footer = () => {
 	return (
 		<Box
@@ -9,11 +9,24 @@ const Footer = () => {
 				textAlign: 'center',
 			}}
 		>
-			<Typography
-				style={{ fontWeight: '100', fontFamily: 'Poppins', fontSize: { xl: '1.7rem', md: '0.2rem', xs: '0.2rem' } }}
+			<Link
+				href='https://github.com/justinnas'
+				underline='none'
+				target='_blank'
+				rel='noreferrer'
+				sx={{
+					color: '#ffffff',
+					'&:hover': {
+						textShadow: '0 0 10px #ffffff',
+					},
+				}}
 			>
-				© {new Date().getFullYear()} justinnas
-			</Typography>
+				<Typography
+					style={{ fontWeight: '100', fontFamily: 'Poppins', fontSize: { xl: '1.7rem', md: '0.2rem', xs: '0.2rem' } }}
+				>
+					© {new Date().getFullYear()} justinnas
+				</Typography>
+			</Link>
 		</Box>
 	);
 };
